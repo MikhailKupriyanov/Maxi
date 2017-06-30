@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hqK-77-1F6">
+                                <rect key="frame" x="60" y="0.0" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hqK-77-1F6" secondAttribute="height" multiplier="1:1" id="Juk-0A-yQ3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZP3-2i-lUM">
+                                <rect key="frame" x="20" y="72.5" width="280" height="56"/>
+                                <string key="text">У вас нет дисконтной карты. 
+Нажмите, чтобы привязать вашу карту через приложение.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVM-t2-lcl">
+                                <rect key="frame" x="20" y="72" width="280" height="56"/>
+                                <connections>
+                                    <action selector="openApplication:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="udR-Sa-3Z2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ZP3-2i-lUM" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="3u8-G3-tjV"/>
+                            <constraint firstItem="hqK-77-1F6" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="5Q7-uK-64y"/>
+                            <constraint firstItem="ZP3-2i-lUM" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="EaI-kD-vfF"/>
+                            <constraint firstItem="RVM-t2-lcl" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="JPA-GP-G0S"/>
+                            <constraint firstItem="hqK-77-1F6" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" id="LTK-fD-Hqo"/>
+                            <constraint firstItem="ZP3-2i-lUM" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="Qn7-SL-e7S"/>
+                            <constraint firstItem="ZP3-2i-lUM" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="20" id="b6e-Ot-Dpu"/>
+                            <constraint firstItem="RVM-t2-lcl" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="ezl-yj-x3i"/>
+                            <constraint firstItem="RVM-t2-lcl" firstAttribute="height" secondItem="ZP3-2i-lUM" secondAttribute="height" id="gPR-Bh-8TO"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="hqK-77-1F6" secondAttribute="bottom" id="idt-12-Rb4"/>
+                            <constraint firstItem="ZP3-2i-lUM" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="mxf-b4-g6Q"/>
+                            <constraint firstAttribute="trailing" secondItem="ZP3-2i-lUM" secondAttribute="trailing" constant="20" id="nvw-qm-cVI"/>
+                            <constraint firstItem="RVM-t2-lcl" firstAttribute="width" secondItem="ZP3-2i-lUM" secondAttribute="width" id="tq0-ew-tdn"/>
+                            <constraint firstItem="hqK-77-1F6" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="vrp-t4-IDE"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="200"/>
+                    <connections>
+                        <outlet property="btOpenApp" destination="RVM-t2-lcl" id="Cpt-Ya-v24"/>
+                        <outlet property="imgQRCode" destination="hqK-77-1F6" id="4Cz-Cj-dIQ"/>
+                        <outlet property="lblNote" destination="ZP3-2i-lUM" id="pht-ji-eQE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -122,37 +122,84 @@ Cg
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите номер карты" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tns-Jy-bJg">
-                                <rect key="frame" x="103.5" y="30" width="168" height="30"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="102.5" y="16" width="170" height="30"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="paS-7T-z5y"/>
+                                </constraints>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="continue"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4o-Xt-HCZ">
-                                <rect key="frame" x="128" y="75" width="119" height="30"/>
-                                <state key="normal" title="Привязать карту"/>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eg1-RY-uv0">
-                                <rect key="frame" x="132" y="145" width="110" height="110"/>
+                                <rect key="frame" x="102.5" y="62" width="170" height="36"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="110" id="JGk-CM-9fA"/>
-                                    <constraint firstAttribute="width" constant="110" id="je3-6p-H4v"/>
+                                    <constraint firstAttribute="width" constant="170" id="bC5-Ij-FAO"/>
+                                    <constraint firstAttribute="height" constant="36" id="twD-j5-toI"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="5" maxX="15" maxY="5"/>
+                                <state key="normal" title="Привязать карту">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitCardNumber:" destination="YqD-hT-tBb" eventType="touchUpInside" id="NZD-4w-o3F"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maxi-icon" translatesAutoresizingMaskIntoConstraints="NO" id="eg1-RY-uv0">
+                                <rect key="frame" x="117" y="130" width="140" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="JGk-CM-9fA"/>
+                                    <constraint firstAttribute="width" constant="140" id="je3-6p-H4v"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Номер карты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShV-pB-b1X">
+                                <rect key="frame" x="134.5" y="278" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value=""/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgQ-Dm-grI">
+                                <rect key="frame" x="102.5" y="16" width="170" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="4Uf-Yx-Qo6"/>
+                                    <constraint firstAttribute="height" constant="36" id="SDK-yx-Kfr"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="15" minY="5" maxX="15" maxY="5"/>
+                                <state key="normal" title="Отвязать карту">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="removeCardNumber:" destination="YqD-hT-tBb" eventType="touchUpInside" id="szH-Oy-kCe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="y4o-Xt-HCZ" firstAttribute="centerX" secondItem="WIB-RF-gLN" secondAttribute="centerX" id="0hc-G4-qQB"/>
+                            <constraint firstItem="ShV-pB-b1X" firstAttribute="centerX" secondItem="WIB-RF-gLN" secondAttribute="centerX" id="Esa-9B-EW1"/>
                             <constraint firstItem="tns-Jy-bJg" firstAttribute="centerX" secondItem="WIB-RF-gLN" secondAttribute="centerX" id="MDS-n0-Acm"/>
-                            <constraint firstItem="tns-Jy-bJg" firstAttribute="top" secondItem="C3F-Tl-amA" secondAttribute="bottom" constant="30" id="OEJ-U4-Up0"/>
-                            <constraint firstItem="y4o-Xt-HCZ" firstAttribute="top" secondItem="tns-Jy-bJg" secondAttribute="bottom" constant="15" id="pfe-Gi-XA4"/>
-                            <constraint firstItem="eg1-RY-uv0" firstAttribute="top" secondItem="y4o-Xt-HCZ" secondAttribute="bottom" constant="40" id="ti3-EW-Agz"/>
+                            <constraint firstItem="tns-Jy-bJg" firstAttribute="top" secondItem="C3F-Tl-amA" secondAttribute="bottom" constant="16" id="OEJ-U4-Up0"/>
+                            <constraint firstItem="ShV-pB-b1X" firstAttribute="top" secondItem="eg1-RY-uv0" secondAttribute="bottom" constant="8" id="bwf-KC-bPm"/>
+                            <constraint firstItem="TgQ-Dm-grI" firstAttribute="centerX" secondItem="WIB-RF-gLN" secondAttribute="centerX" id="mTO-wb-nIO"/>
+                            <constraint firstItem="y4o-Xt-HCZ" firstAttribute="top" secondItem="tns-Jy-bJg" secondAttribute="bottom" constant="16" id="pfe-Gi-XA4"/>
+                            <constraint firstItem="TgQ-Dm-grI" firstAttribute="top" secondItem="C3F-Tl-amA" secondAttribute="bottom" constant="16" id="ryt-rB-zlX"/>
+                            <constraint firstItem="eg1-RY-uv0" firstAttribute="top" secondItem="y4o-Xt-HCZ" secondAttribute="bottom" constant="32" id="ti3-EW-Agz"/>
                             <constraint firstItem="eg1-RY-uv0" firstAttribute="centerX" secondItem="WIB-RF-gLN" secondAttribute="centerX" id="yLP-fZ-rNH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="КАРТА ПОКУПАТЕЛЯ" id="ruX-uD-aXl"/>
                     <connections>
+                        <outlet property="btRemoveCard" destination="TgQ-Dm-grI" id="4fD-iK-Ddb"/>
                         <outlet property="btSubmitCard" destination="y4o-Xt-HCZ" id="4kt-tJ-kKF"/>
                         <outlet property="imgQRCode" destination="eg1-RY-uv0" id="qOr-To-qcC"/>
+                        <outlet property="lblCardNumber" destination="ShV-pB-b1X" id="3bS-9H-fDd"/>
                         <outlet property="tfInputCardNumber" destination="tns-Jy-bJg" id="Grg-5J-y7g"/>
                     </connections>
                 </viewController>
@@ -182,6 +229,7 @@ Cg
     </scenes>
     <resources>
         <image name="logo" width="498" height="188"/>
+        <image name="maxi-icon" width="630" height="630"/>
         <image name="menu" width="32" height="32"/>
     </resources>
 </document>

@@ -25,7 +25,12 @@ CGFloat const kQRCodeSize = 200.0;
     CGSize outputSize = CGSizeMake(kQRCodeSize, kQRCodeSize);
     CIImage *imageByTransform = [qrCodeImage imageByApplyingTransform:CGAffineTransformMakeScale(outputSize.width/CGRectGetWidth(imageSize), outputSize.height/CGRectGetHeight(imageSize))];
     
-    return [UIImage imageWithCIImage:imageByTransform];
+    UIImage *qrCode = [UIImage imageWithCIImage:imageByTransform];
+    if (!qrCode) {
+        qrCode = [UIImage new];
+    }
+    
+    return qrCode;
 }
 
 @end

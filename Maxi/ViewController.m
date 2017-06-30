@@ -10,7 +10,7 @@
 
 // Lib
 #import "VKSideMenu.h"
-//565A5C
+
 const CGFloat kMenuWidth = 260.0;
 const NSInteger kMenuNumberOfSection = 1;
 const NSInteger kMenuNumberOfRows = 8;

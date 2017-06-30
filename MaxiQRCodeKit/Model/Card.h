@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+@import UIKit;
 
-@interface Card : NSObject
+@interface Card : NSObject 
 
 @property (nonatomic, strong, readonly) NSString *numberCard;
+@property (nonatomic, strong, readonly) UIImage *qrCode;
 
 - (instancetype)initCardWithNumber:(NSString *) numberCard;
 

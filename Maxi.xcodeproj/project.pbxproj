@@ -15,10 +15,71 @@
 		CC5155821F0555F100440F85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5155801F0555F100440F85 /* LaunchScreen.storyboard */; };
 		CC51558D1F0565AF00440F85 /* VKSideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CC51558C1F0565AF00440F85 /* VKSideMenu.m */; };
 		CC5155961F05854800440F85 /* AddCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5155951F05854800440F85 /* AddCardViewController.m */; };
-		CC5155991F0597F000440F85 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5155981F0597F000440F85 /* Card.m */; };
-		CC51559D1F05992C00440F85 /* CardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC51559C1F05992C00440F85 /* CardManager.m */; };
-		CC5155A11F05A1E700440F85 /* QRGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5155A01F05A1E700440F85 /* QRGenerator.m */; };
+		CC5155A91F06474B00440F85 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5155A81F06474B00440F85 /* NotificationCenter.framework */; };
+		CC5155AD1F06474B00440F85 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5155AC1F06474B00440F85 /* TodayViewController.m */; };
+		CC5155B01F06474B00440F85 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5155AE1F06474B00440F85 /* MainInterface.storyboard */; };
+		CC5155B41F06474B00440F85 /* MaxiWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CC5155A61F06474B00440F85 /* MaxiWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CC5155B91F064EEE00440F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC51557E1F0555F100440F85 /* Assets.xcassets */; };
+		CC5155C71F06522B00440F85 /* MaxiQRCodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5155C01F06522B00440F85 /* MaxiQRCodeKit.framework */; };
+		CC5155C81F06522B00440F85 /* MaxiQRCodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC5155C01F06522B00440F85 /* MaxiQRCodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CC5155DB1F06535200440F85 /* CardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5155D31F06535200440F85 /* CardManager.m */; };
+		CC5155DC1F06535200440F85 /* Card.h in Headers */ = {isa = PBXBuildFile; fileRef = CC5155D51F06535200440F85 /* Card.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC5155DD1F06535200440F85 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5155D61F06535200440F85 /* Card.m */; };
+		CC5155DE1F06535200440F85 /* QRGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = CC5155D81F06535200440F85 /* QRGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC5155DF1F06535200440F85 /* QRGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5155D91F06535200440F85 /* QRGenerator.m */; };
+		CC5155E11F0653F300440F85 /* MaxiQRCodeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CC5155E01F0653F300440F85 /* MaxiQRCodeKit.h */; };
+		CC5155E31F06812E00440F85 /* CardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CC5155D21F06535200440F85 /* CardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC5155E61F0683C700440F85 /* MaxiQRCodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5155C01F06522B00440F85 /* MaxiQRCodeKit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC5155B21F06474B00440F85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC5155671F0555F100440F85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC5155A51F06474B00440F85;
+			remoteInfo = MaxiWidget;
+		};
+		CC5155C51F06522B00440F85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC5155671F0555F100440F85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC5155BF1F06522B00440F85;
+			remoteInfo = MaxiQRCodeKit;
+		};
+		CC5155E41F0683B100440F85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC5155671F0555F100440F85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC5155BF1F06522B00440F85;
+			remoteInfo = MaxiQRCodeKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CC5155B81F06474B00440F85 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CC5155B41F06474B00440F85 /* MaxiWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC5155CC1F06522B00440F85 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CC5155C81F06522B00440F85 /* MaxiQRCodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CC51556F1F0555F100440F85 /* Maxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maxi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,16 +96,44 @@
 		CC51558C1F0565AF00440F85 /* VKSideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKSideMenu.m; sourceTree = "<group>"; };
 		CC5155941F05854800440F85 /* AddCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddCardViewController.h; path = Card/Controller/AddCardViewController.h; sourceTree = "<group>"; };
 		CC5155951F05854800440F85 /* AddCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddCardViewController.m; path = Card/Controller/AddCardViewController.m; sourceTree = "<group>"; };
-		CC5155971F0597F000440F85 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Card/Model/Card.h; sourceTree = "<group>"; };
-		CC5155981F0597F000440F85 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Card/Model/Card.m; sourceTree = "<group>"; };
-		CC51559B1F05992C00440F85 /* CardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardManager.h; path = Card/Model/CardManager/CardManager.h; sourceTree = "<group>"; };
-		CC51559C1F05992C00440F85 /* CardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardManager.m; path = Card/Model/CardManager/CardManager.m; sourceTree = "<group>"; };
-		CC51559F1F05A1E700440F85 /* QRGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRGenerator.h; path = "Card/Model/QR generator/QRGenerator.h"; sourceTree = "<group>"; };
-		CC5155A01F05A1E700440F85 /* QRGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRGenerator.m; path = "Card/Model/QR generator/QRGenerator.m"; sourceTree = "<group>"; };
+		CC5155A61F06474B00440F85 /* MaxiWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MaxiWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC5155A81F06474B00440F85 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		CC5155AB1F06474B00440F85 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		CC5155AC1F06474B00440F85 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		CC5155AF1F06474B00440F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		CC5155B11F06474B00440F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC5155C01F06522B00440F85 /* MaxiQRCodeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaxiQRCodeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC5155C31F06522B00440F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC5155D21F06535200440F85 /* CardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardManager.h; sourceTree = "<group>"; };
+		CC5155D31F06535200440F85 /* CardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardManager.m; sourceTree = "<group>"; };
+		CC5155D51F06535200440F85 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		CC5155D61F06535200440F85 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		CC5155D81F06535200440F85 /* QRGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRGenerator.h; sourceTree = "<group>"; };
+		CC5155D91F06535200440F85 /* QRGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRGenerator.m; sourceTree = "<group>"; };
+		CC5155E01F0653F300440F85 /* MaxiQRCodeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaxiQRCodeKit.h; sourceTree = "<group>"; };
+		CC5155E71F06847C00440F85 /* Maxi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Maxi.entitlements; sourceTree = "<group>"; };
+		CC5155E81F0684A300440F85 /* MaxiWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MaxiWidget.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CC51556C1F0555F100440F85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC5155C71F06522B00440F85 /* MaxiQRCodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC5155A31F06474B00440F85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC5155E61F0683C700440F85 /* MaxiQRCodeKit.framework in Frameworks */,
+				CC5155A91F06474B00440F85 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC5155BC1F06522B00440F85 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -58,6 +147,9 @@
 			isa = PBXGroup;
 			children = (
 				CC5155711F0555F100440F85 /* Maxi */,
+				CC5155AA1F06474B00440F85 /* MaxiWidget */,
+				CC5155C11F06522B00440F85 /* MaxiQRCodeKit */,
+				CC5155A71F06474B00440F85 /* Frameworks */,
 				CC5155701F0555F100440F85 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				CC51556F1F0555F100440F85 /* Maxi.app */,
+				CC5155A61F06474B00440F85 /* MaxiWidget.appex */,
+				CC5155C01F06522B00440F85 /* MaxiQRCodeKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +167,7 @@
 		CC5155711F0555F100440F85 /* Maxi */ = {
 			isa = PBXGroup;
 			children = (
+				CC5155E71F06847C00440F85 /* Maxi.entitlements */,
 				CC5155901F05848700440F85 /* Application */,
 				CC5155911F0584B100440F85 /* Card */,
 				CC51558E1F05845E00440F85 /* Main */,
@@ -140,7 +235,6 @@
 		CC5155911F0584B100440F85 /* Card */ = {
 			isa = PBXGroup;
 			children = (
-				CC5155931F0584E200440F85 /* Model */,
 				CC5155921F0584D500440F85 /* Controller */,
 			);
 			name = Card;
@@ -155,36 +249,80 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
-		CC5155931F0584E200440F85 /* Model */ = {
+		CC5155A71F06474B00440F85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CC51559E1F05A1AF00440F85 /* QR generator */,
-				CC5155971F0597F000440F85 /* Card.h */,
-				CC5155981F0597F000440F85 /* Card.m */,
-				CC51559A1F0598F100440F85 /* CardManager */,
+				CC5155A81F06474B00440F85 /* NotificationCenter.framework */,
 			);
-			name = Model;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CC51559A1F0598F100440F85 /* CardManager */ = {
+		CC5155AA1F06474B00440F85 /* MaxiWidget */ = {
 			isa = PBXGroup;
 			children = (
-				CC51559B1F05992C00440F85 /* CardManager.h */,
-				CC51559C1F05992C00440F85 /* CardManager.m */,
+				CC5155E81F0684A300440F85 /* MaxiWidget.entitlements */,
+				CC5155AB1F06474B00440F85 /* TodayViewController.h */,
+				CC5155AC1F06474B00440F85 /* TodayViewController.m */,
+				CC5155AE1F06474B00440F85 /* MainInterface.storyboard */,
+				CC5155B11F06474B00440F85 /* Info.plist */,
 			);
-			name = CardManager;
+			path = MaxiWidget;
 			sourceTree = "<group>";
 		};
-		CC51559E1F05A1AF00440F85 /* QR generator */ = {
+		CC5155C11F06522B00440F85 /* MaxiQRCodeKit */ = {
 			isa = PBXGroup;
 			children = (
-				CC51559F1F05A1E700440F85 /* QRGenerator.h */,
-				CC5155A01F05A1E700440F85 /* QRGenerator.m */,
+				CC5155E01F0653F300440F85 /* MaxiQRCodeKit.h */,
+				CC5155D11F06535200440F85 /* Manager */,
+				CC5155D41F06535200440F85 /* Model */,
+				CC5155D71F06535200440F85 /* QR generator */,
+				CC5155C31F06522B00440F85 /* Info.plist */,
 			);
-			name = "QR generator";
+			path = MaxiQRCodeKit;
+			sourceTree = "<group>";
+		};
+		CC5155D11F06535200440F85 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CC5155D21F06535200440F85 /* CardManager.h */,
+				CC5155D31F06535200440F85 /* CardManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		CC5155D41F06535200440F85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC5155D51F06535200440F85 /* Card.h */,
+				CC5155D61F06535200440F85 /* Card.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC5155D71F06535200440F85 /* QR generator */ = {
+			isa = PBXGroup;
+			children = (
+				CC5155D81F06535200440F85 /* QRGenerator.h */,
+				CC5155D91F06535200440F85 /* QRGenerator.m */,
+			);
+			path = "QR generator";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CC5155BD1F06522B00440F85 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC5155DE1F06535200440F85 /* QRGenerator.h in Headers */,
+				CC5155E31F06812E00440F85 /* CardManager.h in Headers */,
+				CC5155DC1F06535200440F85 /* Card.h in Headers */,
+				CC5155E11F0653F300440F85 /* MaxiQRCodeKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		CC51556E1F0555F100440F85 /* Maxi */ = {
@@ -194,15 +332,55 @@
 				CC51556B1F0555F100440F85 /* Sources */,
 				CC51556C1F0555F100440F85 /* Frameworks */,
 				CC51556D1F0555F100440F85 /* Resources */,
+				CC5155B81F06474B00440F85 /* Embed App Extensions */,
+				CC5155CC1F06522B00440F85 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CC5155B31F06474B00440F85 /* PBXTargetDependency */,
+				CC5155C61F06522B00440F85 /* PBXTargetDependency */,
 			);
 			name = Maxi;
 			productName = Maxi;
 			productReference = CC51556F1F0555F100440F85 /* Maxi.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CC5155A51F06474B00440F85 /* MaxiWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC5155B51F06474B00440F85 /* Build configuration list for PBXNativeTarget "MaxiWidget" */;
+			buildPhases = (
+				CC5155A21F06474B00440F85 /* Sources */,
+				CC5155A31F06474B00440F85 /* Frameworks */,
+				CC5155A41F06474B00440F85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC5155E51F0683B100440F85 /* PBXTargetDependency */,
+			);
+			name = MaxiWidget;
+			productName = MaxiWidget;
+			productReference = CC5155A61F06474B00440F85 /* MaxiWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CC5155BF1F06522B00440F85 /* MaxiQRCodeKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC5155C91F06522B00440F85 /* Build configuration list for PBXNativeTarget "MaxiQRCodeKit" */;
+			buildPhases = (
+				CC5155BB1F06522B00440F85 /* Sources */,
+				CC5155BC1F06522B00440F85 /* Frameworks */,
+				CC5155BD1F06522B00440F85 /* Headers */,
+				CC5155BE1F06522B00440F85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaxiQRCodeKit;
+			productName = MaxiQRCodeKit;
+			productReference = CC5155C01F06522B00440F85 /* MaxiQRCodeKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -214,6 +392,26 @@
 				ORGANIZATIONNAME = mpkupriyanov;
 				TargetAttributes = {
 					CC51556E1F0555F100440F85 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5KA5NH492Q;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					CC5155A51F06474B00440F85 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5KA5NH492Q;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					CC5155BF1F06522B00440F85 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 5KA5NH492Q;
 						ProvisioningStyle = Automatic;
@@ -234,6 +432,8 @@
 			projectRoot = "";
 			targets = (
 				CC51556E1F0555F100440F85 /* Maxi */,
+				CC5155A51F06474B00440F85 /* MaxiWidget */,
+				CC5155BF1F06522B00440F85 /* MaxiQRCodeKit */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +449,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC5155A41F06474B00440F85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC5155B91F064EEE00440F85 /* Assets.xcassets in Resources */,
+				CC5155B01F06474B00440F85 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC5155BE1F06522B00440F85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -256,18 +472,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC51559D1F05992C00440F85 /* CardManager.m in Sources */,
 				CC51557A1F0555F100440F85 /* ViewController.m in Sources */,
-				CC5155A11F05A1E700440F85 /* QRGenerator.m in Sources */,
 				CC5155771F0555F100440F85 /* AppDelegate.m in Sources */,
 				CC51558D1F0565AF00440F85 /* VKSideMenu.m in Sources */,
 				CC5155961F05854800440F85 /* AddCardViewController.m in Sources */,
 				CC5155741F0555F100440F85 /* main.m in Sources */,
-				CC5155991F0597F000440F85 /* Card.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC5155A21F06474B00440F85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC5155AD1F06474B00440F85 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC5155BB1F06522B00440F85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC5155DB1F06535200440F85 /* CardManager.m in Sources */,
+				CC5155DF1F06535200440F85 /* QRGenerator.m in Sources */,
+				CC5155DD1F06535200440F85 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC5155B31F06474B00440F85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC5155A51F06474B00440F85 /* MaxiWidget */;
+			targetProxy = CC5155B21F06474B00440F85 /* PBXContainerItemProxy */;
+		};
+		CC5155C61F06522B00440F85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC5155BF1F06522B00440F85 /* MaxiQRCodeKit */;
+			targetProxy = CC5155C51F06522B00440F85 /* PBXContainerItemProxy */;
+		};
+		CC5155E51F0683B100440F85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC5155BF1F06522B00440F85 /* MaxiQRCodeKit */;
+			targetProxy = CC5155E41F0683B100440F85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CC51557B1F0555F100440F85 /* Main.storyboard */ = {
@@ -284,6 +533,14 @@
 				CC5155811F0555F100440F85 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CC5155AE1F06474B00440F85 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC5155AF1F06474B00440F85 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -383,6 +640,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Maxi/Maxi.entitlements;
 				DEVELOPMENT_TEAM = 5KA5NH492Q;
 				INFOPLIST_FILE = Maxi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -395,11 +653,84 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Maxi/Maxi.entitlements;
 				DEVELOPMENT_TEAM = 5KA5NH492Q;
 				INFOPLIST_FILE = Maxi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.mpkupriyanov.Maxi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CC5155B61F06474B00440F85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_ENTITLEMENTS = MaxiWidget/MaxiWidget.entitlements;
+				DEVELOPMENT_TEAM = 5KA5NH492Q;
+				INFOPLIST_FILE = MaxiWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.mpkupriyanov.Maxi.MaxiWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CC5155B71F06474B00440F85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_ENTITLEMENTS = MaxiWidget/MaxiWidget.entitlements;
+				DEVELOPMENT_TEAM = 5KA5NH492Q;
+				INFOPLIST_FILE = MaxiWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.mpkupriyanov.Maxi.MaxiWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CC5155CA1F06522B00440F85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5KA5NH492Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MaxiQRCodeKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.mpkupriyanov.MaxiQRCodeKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CC5155CB1F06522B00440F85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5KA5NH492Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MaxiQRCodeKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.mpkupriyanov.MaxiQRCodeKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -422,6 +753,25 @@
 				CC5155881F0555F100440F85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC5155B51F06474B00440F85 /* Build configuration list for PBXNativeTarget "MaxiWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC5155B61F06474B00440F85 /* Debug */,
+				CC5155B71F06474B00440F85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC5155C91F06522B00440F85 /* Build configuration list for PBXNativeTarget "MaxiQRCodeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC5155CA1F06522B00440F85 /* Debug */,
+				CC5155CB1F06522B00440F85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
