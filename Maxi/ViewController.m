@@ -87,22 +87,18 @@ const CGFloat kMenuRowHeight = 54.0;
         
         case 4:
             item.title = @"МАГАЗИНЫ";
-            item.icon  = [UIImage imageNamed:@"ic_option_4"];
             break;
             
         case 5:
             item.title = @"ОТЗЫВЫ И ПОЖЕЛАНИЯ";
-            item.icon  = [UIImage imageNamed:@"ic_option_4"];
             break;
             
         case 6:
             item.title = @"ТАЙНЫЙ ПОКУПАТЕЛЬ";
-            item.icon  = [UIImage imageNamed:@"ic_option_4"];
             break;
             
         case 7:
             item.title = @"НАСТРОЙКИ ПРОФИЛЯ";
-            item.icon  = [UIImage imageNamed:@"ic_option_4"];
             break;
             
         default:
