@@ -13,6 +13,11 @@
 		CC51557D1F0555F100440F85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC51557B1F0555F100440F85 /* Main.storyboard */; };
 		CC51557F1F0555F100440F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC51557E1F0555F100440F85 /* Assets.xcassets */; };
 		CC5155821F0555F100440F85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5155801F0555F100440F85 /* LaunchScreen.storyboard */; };
+		CC51558D1F0565AF00440F85 /* VKSideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CC51558C1F0565AF00440F85 /* VKSideMenu.m */; };
+		CC5155961F05854800440F85 /* AddCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5155951F05854800440F85 /* AddCardViewController.m */; };
+		CC5155991F0597F000440F85 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5155981F0597F000440F85 /* Card.m */; };
+		CC51559D1F05992C00440F85 /* CardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC51559C1F05992C00440F85 /* CardManager.m */; };
+		CC5155A11F05A1E700440F85 /* QRGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5155A01F05A1E700440F85 /* QRGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		CC51557E1F0555F100440F85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC5155811F0555F100440F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC5155831F0555F100440F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC51558B1F0565AF00440F85 /* VKSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKSideMenu.h; sourceTree = "<group>"; };
+		CC51558C1F0565AF00440F85 /* VKSideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKSideMenu.m; sourceTree = "<group>"; };
+		CC5155941F05854800440F85 /* AddCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddCardViewController.h; path = Card/Controller/AddCardViewController.h; sourceTree = "<group>"; };
+		CC5155951F05854800440F85 /* AddCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddCardViewController.m; path = Card/Controller/AddCardViewController.m; sourceTree = "<group>"; };
+		CC5155971F0597F000440F85 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Card/Model/Card.h; sourceTree = "<group>"; };
+		CC5155981F0597F000440F85 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Card/Model/Card.m; sourceTree = "<group>"; };
+		CC51559B1F05992C00440F85 /* CardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardManager.h; path = Card/Model/CardManager/CardManager.h; sourceTree = "<group>"; };
+		CC51559C1F05992C00440F85 /* CardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardManager.m; path = Card/Model/CardManager/CardManager.m; sourceTree = "<group>"; };
+		CC51559F1F05A1E700440F85 /* QRGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRGenerator.h; path = "Card/Model/QR generator/QRGenerator.h"; sourceTree = "<group>"; };
+		CC5155A01F05A1E700440F85 /* QRGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRGenerator.m; path = "Card/Model/QR generator/QRGenerator.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +73,9 @@
 		CC5155711F0555F100440F85 /* Maxi */ = {
 			isa = PBXGroup;
 			children = (
-				CC5155751F0555F100440F85 /* AppDelegate.h */,
-				CC5155761F0555F100440F85 /* AppDelegate.m */,
-				CC5155781F0555F100440F85 /* ViewController.h */,
-				CC5155791F0555F100440F85 /* ViewController.m */,
+				CC5155901F05848700440F85 /* Application */,
+				CC5155911F0584B100440F85 /* Card */,
+				CC51558E1F05845E00440F85 /* Main */,
 				CC51557B1F0555F100440F85 /* Main.storyboard */,
 				CC51557E1F0555F100440F85 /* Assets.xcassets */,
 				CC5155801F0555F100440F85 /* LaunchScreen.storyboard */,
@@ -77,6 +91,97 @@
 				CC5155731F0555F100440F85 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC5155891F05659C00440F85 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				CC51558A1F0565AF00440F85 /* VKSideMenu */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		CC51558A1F0565AF00440F85 /* VKSideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				CC51558B1F0565AF00440F85 /* VKSideMenu.h */,
+				CC51558C1F0565AF00440F85 /* VKSideMenu.m */,
+			);
+			path = VKSideMenu;
+			sourceTree = "<group>";
+		};
+		CC51558E1F05845E00440F85 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CC5155891F05659C00440F85 /* Lib */,
+				CC51558F1F05847100440F85 /* Controller */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		CC51558F1F05847100440F85 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CC5155781F0555F100440F85 /* ViewController.h */,
+				CC5155791F0555F100440F85 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CC5155901F05848700440F85 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CC5155751F0555F100440F85 /* AppDelegate.h */,
+				CC5155761F0555F100440F85 /* AppDelegate.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		CC5155911F0584B100440F85 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				CC5155931F0584E200440F85 /* Model */,
+				CC5155921F0584D500440F85 /* Controller */,
+			);
+			name = Card;
+			sourceTree = "<group>";
+		};
+		CC5155921F0584D500440F85 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CC5155941F05854800440F85 /* AddCardViewController.h */,
+				CC5155951F05854800440F85 /* AddCardViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CC5155931F0584E200440F85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC51559E1F05A1AF00440F85 /* QR generator */,
+				CC5155971F0597F000440F85 /* Card.h */,
+				CC5155981F0597F000440F85 /* Card.m */,
+				CC51559A1F0598F100440F85 /* CardManager */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CC51559A1F0598F100440F85 /* CardManager */ = {
+			isa = PBXGroup;
+			children = (
+				CC51559B1F05992C00440F85 /* CardManager.h */,
+				CC51559C1F05992C00440F85 /* CardManager.m */,
+			);
+			name = CardManager;
+			sourceTree = "<group>";
+		};
+		CC51559E1F05A1AF00440F85 /* QR generator */ = {
+			isa = PBXGroup;
+			children = (
+				CC51559F1F05A1E700440F85 /* QRGenerator.h */,
+				CC5155A01F05A1E700440F85 /* QRGenerator.m */,
+			);
+			name = "QR generator";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +256,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC51559D1F05992C00440F85 /* CardManager.m in Sources */,
 				CC51557A1F0555F100440F85 /* ViewController.m in Sources */,
+				CC5155A11F05A1E700440F85 /* QRGenerator.m in Sources */,
 				CC5155771F0555F100440F85 /* AppDelegate.m in Sources */,
+				CC51558D1F0565AF00440F85 /* VKSideMenu.m in Sources */,
+				CC5155961F05854800440F85 /* AddCardViewController.m in Sources */,
 				CC5155741F0555F100440F85 /* main.m in Sources */,
+				CC5155991F0597F000440F85 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

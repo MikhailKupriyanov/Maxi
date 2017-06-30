@@ -1,26 +1,187 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="L0s-jN-KmH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCT-LP-hTn">
+                                <rect key="frame" x="20" y="0.0" width="335" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Компания «Макси Девелопмент»">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HelveticaNeue-ThinItalic"/>
+                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-ThinItalic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">«Макси Девелопмент» – федеральная компания, развивающая в регионах России сетевой проект торгово-развлекательных центров под единым брендом «Макси». На рынке коммерческой недвижимости компания работает более 10 лет и является одним из крупнейших девелоперов региональной торговой недвижимости России.
+
+«Макси Девелопмент» входит в группу компаний «Макси», которая успешно работает с 1996 года. В настоящее время «Макси» – одно из крупнейших предприятий Северо-Западного федерального округа России.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-ThinItalic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BCT-LP-hTn" secondAttribute="trailing" constant="20" id="JFZ-3K-tJm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BCT-LP-hTn" secondAttribute="bottom" id="MUA-yU-tAp"/>
+                            <constraint firstItem="BCT-LP-hTn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="NwF-vu-8JW"/>
+                            <constraint firstItem="BCT-LP-hTn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="zU3-iN-YTd"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Cky-FC-5Is">
+                        <nil key="title"/>
+                        <barButtonItem key="backBarButtonItem" title="    " id="a3u-0Y-1D0"/>
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="OtS-ay-kF4">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="showMenu:" destination="BYZ-38-t0r" id="072-me-jqf"/>
+                            </connections>
+                        </barButtonItem>
+                        <view key="titleView" contentMode="scaleToFill" id="9tP-5f-Nja">
+                            <rect key="frame" x="112.5" y="5.5" width="150" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ta2-35-dYG">
+                                    <rect key="frame" x="0.0" y="-8.5" width="150" height="50"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="150" id="iTy-kT-TgI"/>
+                                        <constraint firstAttribute="height" constant="50" id="ozw-CY-RMe"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Ta2-35-dYG" firstAttribute="centerX" secondItem="9tP-5f-Nja" secondAttribute="centerX" id="EuQ-K4-rX9"/>
+                                <constraint firstItem="Ta2-35-dYG" firstAttribute="centerY" secondItem="9tP-5f-Nja" secondAttribute="centerY" id="pGs-HR-PaJ"/>
+                            </constraints>
+                        </view>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tvDescription" destination="BCT-LP-hTn" id="OmE-Ac-id7"/>
+                        <segue destination="YqD-hT-tBb" kind="show" identifier="addCardSegue" id="VfO-LK-hLg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1085.5999999999999" y="-545.57721139430294"/>
+        </scene>
+        <!--КАРТА ПОКУПАТЕЛЯ-->
+        <scene sceneID="GPE-0i-Jjw">
+            <objects>
+                <viewController id="YqD-hT-tBb" customClass="AddCardViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C3F-Tl-amA"/>
+                        <viewControllerLayoutGuide type="bottom" id="l9P-p0-wuc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WIB-RF-gLN">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите номер карты" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tns-Jy-bJg">
+                                <rect key="frame" x="103.5" y="30" width="168" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="continue"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4o-Xt-HCZ">
+                                <rect key="frame" x="128" y="75" width="119" height="30"/>
+                                <state key="normal" title="Привязать карту"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eg1-RY-uv0">
+                                <rect key="frame" x="132" y="145" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="JGk-CM-9fA"/>
+                                    <constraint firstAttribute="width" constant="110" id="je3-6p-H4v"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="y4o-Xt-HCZ" firstAttribute="centerX" secondItem="WIB-RF-gLN" secondAttribute="centerX" id="0hc-G4-qQB"/>
+                            <constraint firstItem="tns-Jy-bJg" firstAttribute="centerX" secondItem="WIB-RF-gLN" secondAttribute="centerX" id="MDS-n0-Acm"/>
+                            <constraint firstItem="tns-Jy-bJg" firstAttribute="top" secondItem="C3F-Tl-amA" secondAttribute="bottom" constant="30" id="OEJ-U4-Up0"/>
+                            <constraint firstItem="y4o-Xt-HCZ" firstAttribute="top" secondItem="tns-Jy-bJg" secondAttribute="bottom" constant="15" id="pfe-Gi-XA4"/>
+                            <constraint firstItem="eg1-RY-uv0" firstAttribute="top" secondItem="y4o-Xt-HCZ" secondAttribute="bottom" constant="40" id="ti3-EW-Agz"/>
+                            <constraint firstItem="eg1-RY-uv0" firstAttribute="centerX" secondItem="WIB-RF-gLN" secondAttribute="centerX" id="yLP-fZ-rNH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="КАРТА ПОКУПАТЕЛЯ" id="ruX-uD-aXl"/>
+                    <connections>
+                        <outlet property="btSubmitCard" destination="y4o-Xt-HCZ" id="4kt-tJ-kKF"/>
+                        <outlet property="imgQRCode" destination="eg1-RY-uv0" id="qOr-To-qcC"/>
+                        <outlet property="tfInputCardNumber" destination="tns-Jy-bJg" id="Grg-5J-y7g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RPH-UM-9JM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1959.2" y="-545.57721139430294"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="teb-sT-H2p">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L0s-jN-KmH" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="b3S-aK-kPC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="S5w-ju-quK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9cL-CY-ssd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-543.77811094452773"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="498" height="188"/>
+        <image name="menu" width="32" height="32"/>
+    </resources>
 </document>
