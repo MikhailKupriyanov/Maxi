@@ -255,7 +255,7 @@
     
     VKSideMenuItem *item = [self.dataSource sideMenu:self itemForRowAtIndexPath:indexPath];
     
-    CGFloat contentHeight = cell.frame.size.height * .8;
+    CGFloat contentHeight = cell.frame.size.height * .6;
     CGFloat contentTopBottomPadding = cell.frame.size.height * .1;
     
     if (item.icon)
@@ -271,11 +271,11 @@
         
         imageViewIcon.image = item.icon;
         
-        if (self.iconsColor)
-        {
-            imageViewIcon.image = [imageViewIcon.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-            imageViewIcon.tintColor = self.iconsColor;
-        }
+//        if (self.iconsColor)
+//        {
+//            imageViewIcon.image = [imageViewIcon.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+//            imageViewIcon.tintColor = self.iconsColor;
+//        }
     }
     
     title = [cell.contentView viewWithTag:200];
@@ -285,7 +285,7 @@
         CGFloat titleX = item.icon ? CGRectGetMaxX(imageViewIcon.frame) + 12 : 12;
         title = [[UILabel alloc] initWithFrame:CGRectMake(titleX, contentTopBottomPadding, cell.frame.size.width - titleX - 12, contentHeight)];
         title.tag  = 200;
-        title.font = [UIFont systemFontOfSize:17.0];
+        title.font = [UIFont systemFontOfSize:14.0];
         title.adjustsFontSizeToFitWidth = YES;
         [cell.contentView addSubview:title];
     }

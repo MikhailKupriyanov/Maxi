@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		377CE76ABD5CD12AF657D01E /* libPods-Maxi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2079FE9169E363F687D3E274 /* libPods-Maxi.a */; };
+		7789EB8F408601D9CABA09EC /* libPods-MaxiWidget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4594939C793806F17C631B4 /* libPods-MaxiWidget.a */; };
+		C0C94DDFAF17BF193957F134 /* libPods-MaxiQRCodeKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E69048E40F5B2D2D493145 /* libPods-MaxiQRCodeKit.a */; };
 		CC5155741F0555F100440F85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5155731F0555F100440F85 /* main.m */; };
 		CC5155771F0555F100440F85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5155761F0555F100440F85 /* AppDelegate.m */; };
 		CC51557A1F0555F100440F85 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5155791F0555F100440F85 /* ViewController.m */; };
 		CC51557D1F0555F100440F85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC51557B1F0555F100440F85 /* Main.storyboard */; };
-		CC51557F1F0555F100440F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC51557E1F0555F100440F85 /* Assets.xcassets */; };
 		CC5155821F0555F100440F85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5155801F0555F100440F85 /* LaunchScreen.storyboard */; };
 		CC51558D1F0565AF00440F85 /* VKSideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CC51558C1F0565AF00440F85 /* VKSideMenu.m */; };
-		CC5155961F05854800440F85 /* AddCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5155951F05854800440F85 /* AddCardViewController.m */; };
 		CC5155A91F06474B00440F85 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5155A81F06474B00440F85 /* NotificationCenter.framework */; };
 		CC5155AD1F06474B00440F85 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5155AC1F06474B00440F85 /* TodayViewController.m */; };
 		CC5155B01F06474B00440F85 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5155AE1F06474B00440F85 /* MainInterface.storyboard */; };
 		CC5155B41F06474B00440F85 /* MaxiWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CC5155A61F06474B00440F85 /* MaxiWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		CC5155B91F064EEE00440F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC51557E1F0555F100440F85 /* Assets.xcassets */; };
 		CC5155C71F06522B00440F85 /* MaxiQRCodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5155C01F06522B00440F85 /* MaxiQRCodeKit.framework */; };
 		CC5155C81F06522B00440F85 /* MaxiQRCodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC5155C01F06522B00440F85 /* MaxiQRCodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CC5155DB1F06535200440F85 /* CardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5155D31F06535200440F85 /* CardManager.m */; };
@@ -30,6 +30,10 @@
 		CC5155E11F0653F300440F85 /* MaxiQRCodeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CC5155E01F0653F300440F85 /* MaxiQRCodeKit.h */; };
 		CC5155E31F06812E00440F85 /* CardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CC5155D21F06535200440F85 /* CardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC5155E61F0683C700440F85 /* MaxiQRCodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5155C01F06522B00440F85 /* MaxiQRCodeKit.framework */; };
+		CC64B8291F0AA05F0034CDC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC64B8281F0AA05F0034CDC5 /* Assets.xcassets */; };
+		CC64B82A1F0AA05F0034CDC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC64B8281F0AA05F0034CDC5 /* Assets.xcassets */; };
+		CC64B82F1F0AE1AF0034CDC5 /* AddDiscountCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC64B82E1F0AE1AF0034CDC5 /* AddDiscountCardController.m */; };
+		CC64B8321F0B05DF0034CDC5 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC64B8311F0B05DF0034CDC5 /* CardViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +86,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2079FE9169E363F687D3E274 /* libPods-Maxi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Maxi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25C9806963BFC6E92132080E /* Pods-Maxi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maxi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Maxi/Pods-Maxi.debug.xcconfig"; sourceTree = "<group>"; };
+		34E69048E40F5B2D2D493145 /* libPods-MaxiQRCodeKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MaxiQRCodeKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58BA4C99FDBA13990D2FB9D4 /* Pods-MaxiWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaxiWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaxiWidget/Pods-MaxiWidget.release.xcconfig"; sourceTree = "<group>"; };
+		754E4C910930484D241DC653 /* Pods-Maxi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maxi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Maxi/Pods-Maxi.release.xcconfig"; sourceTree = "<group>"; };
+		A083EA2C70E6E30674E40569 /* Pods-MaxiQRCodeKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaxiQRCodeKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaxiQRCodeKit/Pods-MaxiQRCodeKit.debug.xcconfig"; sourceTree = "<group>"; };
+		ABD4B9364E6A13740024C1AD /* Pods-MaxiQRCodeKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaxiQRCodeKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaxiQRCodeKit/Pods-MaxiQRCodeKit.release.xcconfig"; sourceTree = "<group>"; };
 		CC51556F1F0555F100440F85 /* Maxi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maxi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5155731F0555F100440F85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC5155751F0555F100440F85 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,13 +100,10 @@
 		CC5155781F0555F100440F85 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CC5155791F0555F100440F85 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CC51557C1F0555F100440F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CC51557E1F0555F100440F85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC5155811F0555F100440F85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC5155831F0555F100440F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC51558B1F0565AF00440F85 /* VKSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKSideMenu.h; sourceTree = "<group>"; };
 		CC51558C1F0565AF00440F85 /* VKSideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKSideMenu.m; sourceTree = "<group>"; };
-		CC5155941F05854800440F85 /* AddCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddCardViewController.h; path = Card/Controller/AddCardViewController.h; sourceTree = "<group>"; };
-		CC5155951F05854800440F85 /* AddCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddCardViewController.m; path = Card/Controller/AddCardViewController.m; sourceTree = "<group>"; };
 		CC5155A61F06474B00440F85 /* MaxiWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MaxiWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5155A81F06474B00440F85 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		CC5155AB1F06474B00440F85 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
@@ -113,6 +121,14 @@
 		CC5155E01F0653F300440F85 /* MaxiQRCodeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaxiQRCodeKit.h; sourceTree = "<group>"; };
 		CC5155E71F06847C00440F85 /* Maxi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Maxi.entitlements; sourceTree = "<group>"; };
 		CC5155E81F0684A300440F85 /* MaxiWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MaxiWidget.entitlements; sourceTree = "<group>"; };
+		CC64B8281F0AA05F0034CDC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC64B82C1F0AAD230034CDC5 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Common.h; path = Common/Common.h; sourceTree = "<group>"; };
+		CC64B82D1F0AE1AF0034CDC5 /* AddDiscountCardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddDiscountCardController.h; path = Card/Controller/AddDiscountCardController.h; sourceTree = "<group>"; };
+		CC64B82E1F0AE1AF0034CDC5 /* AddDiscountCardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddDiscountCardController.m; path = Card/Controller/AddDiscountCardController.m; sourceTree = "<group>"; };
+		CC64B8301F0B05DF0034CDC5 /* CardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardViewController.h; path = Card/Controller/CardViewController.h; sourceTree = "<group>"; };
+		CC64B8311F0B05DF0034CDC5 /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardViewController.m; path = Card/Controller/CardViewController.m; sourceTree = "<group>"; };
+		E4594939C793806F17C631B4 /* libPods-MaxiWidget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MaxiWidget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE915BBF3B916ABFFD97C98B /* Pods-MaxiWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaxiWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaxiWidget/Pods-MaxiWidget.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC5155C71F06522B00440F85 /* MaxiQRCodeKit.framework in Frameworks */,
+				377CE76ABD5CD12AF657D01E /* libPods-Maxi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +147,7 @@
 			files = (
 				CC5155E61F0683C700440F85 /* MaxiQRCodeKit.framework in Frameworks */,
 				CC5155A91F06474B00440F85 /* NotificationCenter.framework in Frameworks */,
+				7789EB8F408601D9CABA09EC /* libPods-MaxiWidget.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +155,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0C94DDFAF17BF193957F134 /* libPods-MaxiQRCodeKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		730A1D9D6C8D7096022FD7C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25C9806963BFC6E92132080E /* Pods-Maxi.debug.xcconfig */,
+				754E4C910930484D241DC653 /* Pods-Maxi.release.xcconfig */,
+				A083EA2C70E6E30674E40569 /* Pods-MaxiQRCodeKit.debug.xcconfig */,
+				ABD4B9364E6A13740024C1AD /* Pods-MaxiQRCodeKit.release.xcconfig */,
+				EE915BBF3B916ABFFD97C98B /* Pods-MaxiWidget.debug.xcconfig */,
+				58BA4C99FDBA13990D2FB9D4 /* Pods-MaxiWidget.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CC5155661F0555F100440F85 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +183,7 @@
 				CC5155C11F06522B00440F85 /* MaxiQRCodeKit */,
 				CC5155A71F06474B00440F85 /* Frameworks */,
 				CC5155701F0555F100440F85 /* Products */,
+				730A1D9D6C8D7096022FD7C5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,12 +200,13 @@
 		CC5155711F0555F100440F85 /* Maxi */ = {
 			isa = PBXGroup;
 			children = (
+				CC64B82B1F0AACEB0034CDC5 /* Common */,
 				CC5155E71F06847C00440F85 /* Maxi.entitlements */,
 				CC5155901F05848700440F85 /* Application */,
 				CC5155911F0584B100440F85 /* Card */,
 				CC51558E1F05845E00440F85 /* Main */,
 				CC51557B1F0555F100440F85 /* Main.storyboard */,
-				CC51557E1F0555F100440F85 /* Assets.xcassets */,
+				CC64B8281F0AA05F0034CDC5 /* Assets.xcassets */,
 				CC5155801F0555F100440F85 /* LaunchScreen.storyboard */,
 				CC5155831F0555F100440F85 /* Info.plist */,
 				CC5155721F0555F100440F85 /* Supporting Files */,
@@ -243,8 +277,10 @@
 		CC5155921F0584D500440F85 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CC5155941F05854800440F85 /* AddCardViewController.h */,
-				CC5155951F05854800440F85 /* AddCardViewController.m */,
+				CC64B82D1F0AE1AF0034CDC5 /* AddDiscountCardController.h */,
+				CC64B82E1F0AE1AF0034CDC5 /* AddDiscountCardController.m */,
+				CC64B8301F0B05DF0034CDC5 /* CardViewController.h */,
+				CC64B8311F0B05DF0034CDC5 /* CardViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -253,6 +289,9 @@
 			isa = PBXGroup;
 			children = (
 				CC5155A81F06474B00440F85 /* NotificationCenter.framework */,
+				2079FE9169E363F687D3E274 /* libPods-Maxi.a */,
+				34E69048E40F5B2D2D493145 /* libPods-MaxiQRCodeKit.a */,
+				E4594939C793806F17C631B4 /* libPods-MaxiWidget.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -308,6 +347,14 @@
 			path = "QR generator";
 			sourceTree = "<group>";
 		};
+		CC64B82B1F0AACEB0034CDC5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CC64B82C1F0AAD230034CDC5 /* Common.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -329,11 +376,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC5155861F0555F100440F85 /* Build configuration list for PBXNativeTarget "Maxi" */;
 			buildPhases = (
+				6FE60E48F1D4D45A6E9F5557 /* [CP] Check Pods Manifest.lock */,
 				CC51556B1F0555F100440F85 /* Sources */,
 				CC51556C1F0555F100440F85 /* Frameworks */,
 				CC51556D1F0555F100440F85 /* Resources */,
 				CC5155B81F06474B00440F85 /* Embed App Extensions */,
 				CC5155CC1F06522B00440F85 /* Embed Frameworks */,
+				B3418B5C91C895652D672453 /* [CP] Embed Pods Frameworks */,
+				448EEAC27A6A4E24F3D8A31C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -350,9 +400,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC5155B51F06474B00440F85 /* Build configuration list for PBXNativeTarget "MaxiWidget" */;
 			buildPhases = (
+				D052C31AAC1F7F8BFA5F8612 /* [CP] Check Pods Manifest.lock */,
 				CC5155A21F06474B00440F85 /* Sources */,
 				CC5155A31F06474B00440F85 /* Frameworks */,
 				CC5155A41F06474B00440F85 /* Resources */,
+				51E40DDF12E2C2A709BBD438 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -368,10 +420,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC5155C91F06522B00440F85 /* Build configuration list for PBXNativeTarget "MaxiQRCodeKit" */;
 			buildPhases = (
+				8518542ECE7A56C04641DC58 /* [CP] Check Pods Manifest.lock */,
 				CC5155BB1F06522B00440F85 /* Sources */,
 				CC5155BC1F06522B00440F85 /* Frameworks */,
 				CC5155BD1F06522B00440F85 /* Headers */,
 				CC5155BE1F06522B00440F85 /* Resources */,
+				E755CA19000E9176CE7CDF0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -444,7 +498,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC5155821F0555F100440F85 /* LaunchScreen.storyboard in Resources */,
-				CC51557F1F0555F100440F85 /* Assets.xcassets in Resources */,
+				CC64B8291F0AA05F0034CDC5 /* Assets.xcassets in Resources */,
 				CC51557D1F0555F100440F85 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,7 +507,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC5155B91F064EEE00440F85 /* Assets.xcassets in Resources */,
+				CC64B82A1F0AA05F0034CDC5 /* Assets.xcassets in Resources */,
 				CC5155B01F06474B00440F85 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,6 +521,114 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		448EEAC27A6A4E24F3D8A31C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Maxi/Pods-Maxi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51E40DDF12E2C2A709BBD438 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaxiWidget/Pods-MaxiWidget-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FE60E48F1D4D45A6E9F5557 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8518542ECE7A56C04641DC58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B3418B5C91C895652D672453 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Maxi/Pods-Maxi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D052C31AAC1F7F8BFA5F8612 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E755CA19000E9176CE7CDF0C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaxiQRCodeKit/Pods-MaxiQRCodeKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CC51556B1F0555F100440F85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -474,8 +636,9 @@
 			files = (
 				CC51557A1F0555F100440F85 /* ViewController.m in Sources */,
 				CC5155771F0555F100440F85 /* AppDelegate.m in Sources */,
+				CC64B8321F0B05DF0034CDC5 /* CardViewController.m in Sources */,
+				CC64B82F1F0AE1AF0034CDC5 /* AddDiscountCardController.m in Sources */,
 				CC51558D1F0565AF00440F85 /* VKSideMenu.m in Sources */,
-				CC5155961F05854800440F85 /* AddCardViewController.m in Sources */,
 				CC5155741F0555F100440F85 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -638,6 +801,7 @@
 		};
 		CC5155871F0555F100440F85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25C9806963BFC6E92132080E /* Pods-Maxi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Maxi/Maxi.entitlements;
@@ -651,6 +815,7 @@
 		};
 		CC5155881F0555F100440F85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 754E4C910930484D241DC653 /* Pods-Maxi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Maxi/Maxi.entitlements;
@@ -664,6 +829,7 @@
 		};
 		CC5155B61F06474B00440F85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE915BBF3B916ABFFD97C98B /* Pods-MaxiWidget.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_ENTITLEMENTS = MaxiWidget/MaxiWidget.entitlements;
@@ -678,6 +844,7 @@
 		};
 		CC5155B71F06474B00440F85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58BA4C99FDBA13990D2FB9D4 /* Pods-MaxiWidget.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_ENTITLEMENTS = MaxiWidget/MaxiWidget.entitlements;
@@ -692,6 +859,7 @@
 		};
 		CC5155CA1F06522B00440F85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A083EA2C70E6E30674E40569 /* Pods-MaxiQRCodeKit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -714,6 +882,7 @@
 		};
 		CC5155CB1F06522B00440F85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABD4B9364E6A13740024C1AD /* Pods-MaxiQRCodeKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;

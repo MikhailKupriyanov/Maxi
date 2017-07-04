@@ -1,0 +1,12 @@
+PODS:
+  - NSStringMask (1.2)
+
+DEPENDENCIES:
+  - NSStringMask
+
+SPEC CHECKSUMS:
+  NSStringMask: 77f655efb20a9ccf098f0da0d64ff923f6bf58aa
+
+PODFILE CHECKSUM: 5c3a2ba337e6bba83ee3acd54e15b5b8d85f2bf8
+
+COCOAPODS: 1.1.1

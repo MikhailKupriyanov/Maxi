@@ -11,42 +11,95 @@
 // Lib
 #import "VKSideMenu.h"
 
-const CGFloat kMenuWidth = 260.0;
+// Common
+#import "Common.h"
+
+// Model
+#import "MaxiQRCodeKit.h"
+
+const CGFloat kMenuWidth = 250.0;
 const NSInteger kMenuNumberOfSection = 1;
 const NSInteger kMenuNumberOfRows = 8;
 const CGFloat kMenuRowHeight = 54.0;
 
+typedef NS_ENUM(NSInteger, SideMenuItem) {
+    PromoutionAndDiscountItem,
+    ShoppingListItem,
+    ClientCardItem,
+    HistoryOfPurchaseItem,
+    ShopsItem,
+    CommentsAndWishesItem,
+    MysteryShopperItem,
+    ProfileSettingsItem
+};
+
 @interface ViewController () <VKSideMenuDelegate, VKSideMenuDataSource>
+{
+    CardManager *_cardManager;
+}
 @property (nonatomic, strong) VKSideMenu *menu;
 @property (weak, nonatomic) IBOutlet UITextView *tvDescription;
+@property (weak, nonatomic) IBOutlet UIButton *btShowCard;
+@property (weak, nonatomic) IBOutlet UIImageView *imgDiscountCard;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self initialize];
 }
 
-- (void)viewDidLayoutSubviews {
-    [self.tvDescription setContentOffset:CGPointZero animated:NO];
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    _cardManager = [CardManager new];
+    if (_cardManager.hasCard) {
+        _imgDiscountCard.hidden = NO;
+        _btShowCard.enabled = YES;
+    } else {
+        _imgDiscountCard.hidden = YES;
+        _btShowCard.enabled = NO;
+    }
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    _cardManager = nil;
 }
 
 - (void)initialize {
+    self.title = @"О КОМПАНИИ";
+    
+    [_btShowCard addTarget:self action:@selector(showDiscountCard) forControlEvents:UIControlEventTouchUpInside];
+    
     self.menu = [[VKSideMenu alloc] initWithSize:kMenuWidth andDirection:VKSideMenuDirectionFromLeft];
     self.menu.rowHeight = kMenuRowHeight;
-    self.menu.textColor = [UIColor darkGrayColor];
+    self.menu.textColor = [UIColor whiteColor];
     self.menu.hideOnSelection = NO;
     self.menu.dataSource = self;
     self.menu.delegate   = self;
     [self.menu addSwipeGestureRecognition:self.view];
-    
-    self.tvDescription.clipsToBounds = NO;
-    self.tvDescription.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, 0, -20);
 }
 
 - (IBAction)showMenu:(id)sender {
     [self.menu show];
+    [self setupMenu];
+}
+
+- (void)setupMenu {
+    self.menu.tableView.backgroundColor = maxiBackgroundColor;
+    self.menu.tableView.bounces = NO;
+}
+
+// Показываем экран добавления карты
+- (void)showAddDiscountCard {
+    [self performSegueWithIdentifier:@"addCardSegue" sender:nil];
+}
+
+// Показываем экран с qr code
+- (void)showDiscountCard {
+    [self performSegueWithIdentifier:@"discountCardSegue" sender:nil];
 }
 
 // MARK: VKSideMenuDataSource
@@ -65,40 +118,44 @@ const CGFloat kMenuRowHeight = 54.0;
     
     switch (indexPath.row)
     {
-        case 0:
+        case PromoutionAndDiscountItem:
             item.title = @"АКЦИИ И СКИДКИ";
-            item.icon  = [UIImage imageNamed:@"discount"];
+            item.icon  = [UIImage imageNamed:@"stockListIcon"];
             break;
             
-        case 1:
+        case ShoppingListItem:
             item.title = @"СПИСОК ПОКУПОК";
-            item.icon  = [UIImage imageNamed:@"check-list"];
+            item.icon  = [UIImage imageNamed:@"shopListIcon"];
             break;
             
-        case 2:
+        case ClientCardItem:
             item.title = @"КАРТА ПОКУПАТЕЛЯ";
-            item.icon  = [UIImage imageNamed:@"card"];
+            item.icon  = [UIImage imageNamed:@"cardIcon"];
             break;
             
-        case 3:
+        case HistoryOfPurchaseItem:
             item.title = @"ИСТОРИЯ ПОКУПОК";
-            item.icon  = [UIImage imageNamed:@"history-purchase-list"];
+            item.icon  = [UIImage imageNamed:@"historyItem"];
             break;
-        
-        case 4:
+            
+        case ShopsItem:
             item.title = @"МАГАЗИНЫ";
+            item.icon = [UIImage imageNamed:@"shopsIcon"];
             break;
             
-        case 5:
+        case CommentsAndWishesItem:
             item.title = @"ОТЗЫВЫ И ПОЖЕЛАНИЯ";
+            item.icon = [UIImage imageNamed:@"reviewIcon"];
             break;
             
-        case 6:
+        case MysteryShopperItem:
             item.title = @"ТАЙНЫЙ ПОКУПАТЕЛЬ";
+            item.icon = [UIImage imageNamed:@"spick"];
             break;
             
-        case 7:
+        case ProfileSettingsItem:
             item.title = @"НАСТРОЙКИ ПРОФИЛЯ";
+            item.icon = [UIImage imageNamed:@"settingseIcon"];
             break;
             
         default:
@@ -113,8 +170,12 @@ const CGFloat kMenuRowHeight = 54.0;
 - (void)sideMenu:(VKSideMenu *)sideMenu didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     switch (indexPath.row)
     {
-        case 2:
-            [self performSegueWithIdentifier:@"addCardSegue" sender:nil];
+        case ClientCardItem:
+            if (_cardManager.hasCard) {
+                [self showDiscountCard];
+            } else {
+                [self showAddDiscountCard];
+            }
             [self.menu hide];
             break;
     }
